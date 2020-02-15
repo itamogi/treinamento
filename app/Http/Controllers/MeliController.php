@@ -66,10 +66,10 @@ class MeliController extends Controller
 		];
 		
 		try {
-			for( $i = 0; $i < 10; $i++ ){
-				$result = $client->sendMessage($params);
-				dump('DISPARADO');
-			}
+			
+			$result = $client->sendMessage($params);
+			dump('DISPARADO');
+			
 			
 		} catch (AwsException $e) {
 			// output error message if fails
